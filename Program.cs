@@ -10,33 +10,33 @@ using var context = new EscolaContext();
 // ------------------------------------------------
 // CREATE: Adicionando novos dados
 // ------------------------------------------------
-// Console.WriteLine("Inserindo dados...");
+Console.WriteLine("Inserindo dados...");
 
-// var turmaA = new Turma { NomeTurma = "3A", Turno = "Manhã" };
-// var turmaB = new Turma { NomeTurma = "3B", Turno = "Tarde" };
+var turmaA = new Turma { NomeTurma = "3A", Turno = "Manhã" };
+var turmaB = new Turma { NomeTurma = "3B", Turno = "Tarde" };
 
-// context.Turmas.Add(turmaA);
-// context.Turmas.Add(turmaB);
+context.Turmas.Add(turmaA);
+context.Turmas.Add(turmaB);
 
-// context.SaveChanges();
+context.SaveChanges();
 
-// var ana = new Aluno { Nome = "Ana", Idade = 17, TurmaId = turmaA.Id };
-// var bruno = new Aluno { Nome = "Bruno", Idade = 18, TurmaId = turmaA.Id };
-// var carla = new Aluno { Nome = "Carla", Idade = 17, TurmaId = turmaB.Id };
+var ana = new Aluno { Nome = "Ana", Idade = 17, TurmaId = turmaA.Id };
+var bruno = new Aluno { Nome = "Bruno", Idade = 18, TurmaId = turmaA.Id };
+var carla = new Aluno { Nome = "Carla", Idade = 17, TurmaId = turmaB.Id };
 
-// context.Alunos.AddRange(ana, bruno, carla);
+context.Alunos.AddRange(ana, bruno, carla);
 
-// context.SaveChanges();
+context.SaveChanges();
 
-// context.Notas.AddRange(
-//     new Nota { Disciplina = "Matemática", Valor = 9.5, AlunoId = ana.Id },
-//     new Nota { Disciplina = "Português", Valor = 8.0, AlunoId = ana.Id },
-//     new Nota { Disciplina = "Matemática", Valor = 7.0, AlunoId = bruno.Id }
-// );
+context.Notas.AddRange(
+    new Nota { Disciplina = "Matemática", Valor = 9.5, AlunoId = ana.Id },
+    new Nota { Disciplina = "Português", Valor = 8.0, AlunoId = ana.Id },
+    new Nota { Disciplina = "Matemática", Valor = 7.0, AlunoId = bruno.Id }
+);
 
-// context.SaveChanges();
+context.SaveChanges();
 
-// Console.WriteLine("Dados inseridos!");
+Console.WriteLine("Dados inseridos!");
 
 // ------------------------------------------------
 // READ: Lendo dados com LINQ
