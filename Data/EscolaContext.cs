@@ -1,14 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using App.Models;
 
-public class EscolaContext : DbContext
+namespace App.Data
 {
-    public DbSet<Aluno> Alunos { get; set; }
-    public DbSet<Turma> Turmas { get; set; }
-    public DbSet<Nota> Notas { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public class EscolaContext : DbContext
     {
-        optionsBuilder.UseSqlite("Data Source=escola.db");
-    }
+        public DbSet<Aluno> Alunos { get; set; }
+        public DbSet<Turma> Turmas { get; set; }
+        public DbSet<Nota> Notas { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source=escola.db");
+        }
+    } 
 }

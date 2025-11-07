@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Migrations
 {
     [DbContext(typeof(EscolaContext))]
-    [Migration("20251107124201_v1")]
-    partial class v1
+    [Migration("20251107124958_v2")]
+    partial class v2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
