@@ -6,7 +6,7 @@ O cenário utilizado é o de uma mini-secretaria acadêmica, com `Alunos`, `Turm
 
 ## 🚀 Evolução do Aprendizado: Do LINQ ao EF Core
 
-Este projeto é a evolução direta do meu [Repositório de Estudo de LINQ](https://github.com/SEU_USUARIO/Estudo_Linq) (Substitua este link pelo seu).
+Este projeto é a evolução direta do meu [Repositório de Estudo de LINQ](https://github.com/Ca22io/Estudo_Linq)
 
 Enquanto o projeto anterior focava em consultas LINQ em *memória* (com dados mockados em `List<T>`), este projeto aplica os **mesmos conceitos de consulta LINQ** contra um **banco de dados real**.
 
