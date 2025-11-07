@@ -38,6 +38,13 @@ context.SaveChanges();
 
 Console.WriteLine("Dados inseridos!");
 
+Console.WriteLine("\n--- Todos os alunos cadastrados ---");
+var todosAlunos = context.Alunos.ToList();
+foreach (var aluno in todosAlunos)
+{
+    Console.WriteLine($"Nome: {aluno.Nome}");
+}
+
 // ------------------------------------------------
 // READ: Lendo dados com LINQ
 // ------------------------------------------------
