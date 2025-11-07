@@ -16,15 +16,17 @@ Aqui, o LINQ é usado para que o Entity Framework o traduza em comandos SQL, dem
 
 Este projeto serve como um guia prático para os seguintes conceitos:
 
-* **Configuração do `DbContext`**: Mapeamento das entidades (`DbSet`) e configuração do provedor (`OnConfiguring`).
-* **Fluxo Code-First**: Criação de `Models` C# que geram a estrutura do banco.
-* **Migrations**: Geração (`dotnet ef migrations add`) e aplicação (`dotnet ef database update`) de alterações no schema do banco.
-* **CREATE**: Uso de `.Add()` e `.AddRange()` com `SaveChanges()` para inserir dados.
-* **READ (LINQ to SQL)**: Uso de `.Where()`, `.FirstOrDefault()` e outros operadores LINQ que são traduzidos para SQL.
-* **UPDATE**: Busca de uma entidade, modificação de suas propriedades e `SaveChanges()`.
-* **DELETE**: Uso de `.Remove()` com `SaveChanges()` para deletar registros.
-* **Relacionamentos e JOINs**: Uso de Chaves Estrangeiras (`TurmaId`) e Propriedades de Navegação (`ICollection<Aluno>`).
-* **Carregamento Relacionado (Eager Loading)**: Uso do `.Include()` para trazer dados de tabelas relacionadas (o "JOIN" do EF Core).
+| Conceito | Descrição |
+| :--- | :--- |
+| **Configuração do `DbContext`** | Mapeamento das entidades (`DbSet`) e configuração do provedor (`OnConfiguring`). |
+| **Fluxo Code-First** | Criação de `Models` C# que geram a estrutura do banco. |
+| **Migrations** | Geração (`dotnet ef migrations add`) e aplicação (`dotnet ef database update`) de alterações no schema. |
+| **CREATE** | Uso de `.Add()` e `.AddRange()` com `SaveChanges()` para inserir dados. |
+| **READ (LINQ to SQL)** | Uso de `.Where()`, `.FirstOrDefault()` e outros operadores LINQ que são traduzidos para SQL. |
+| **UPDATE** | Busca de uma entidade, modificação de suas propriedades e `SaveChanges()`. |
+| **DELETE** | Uso de `.Remove()` com `SaveChanges()` para deletar registros. |
+| **Relacionamentos** | Uso de Chaves Estrangeiras (`TurmaId`) e Propriedades de Navegação (`ICollection<Aluno>`). |
+| **Carregamento Relacionado** | Uso do `.Include()` para trazer dados de tabelas relacionadas (o "JOIN" do EF Core). |
 
 ## 🚀 Tecnologias Utilizadas
 
